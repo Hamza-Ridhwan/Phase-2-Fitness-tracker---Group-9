@@ -1,4 +1,7 @@
-* {
+/* Home */
+  /* index.css */
+ /* Basic Reset */
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +15,7 @@
   
   /* Background Wrapper */
   .background-wrapper {
-    /*background-image: url('./background\ image.webp'); /* Path to your fitness background image */
+    background-image: url(); /* Path to your fitness background image */
     background-size: cover;
     background-position: center;
     color: white;
@@ -25,6 +28,7 @@
     align-items: center; /* Center vertically */
     color: white;
     padding: 1rem 10%;
+    background-color: black;
   }
   
   header img {

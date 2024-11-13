@@ -1,17 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+
+const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/" className="nav-link">Home</Link>
-        </li>
-        <li>
-          <Link to="/TrackWorkout" className="nav-link">Track Workout</Link>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <img   alt="Fitness Tracker Logo" />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Track Your Workout</a>
+      </nav>
+    </header>
   );
-}
+};
+
+export default Navbar;
