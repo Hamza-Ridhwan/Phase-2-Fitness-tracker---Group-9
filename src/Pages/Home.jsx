@@ -1,15 +1,13 @@
 // src/components/App.jsx
 import React from 'react';
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
 // import './App.css'; // Add all the styles here or import from index.css
-
+import  '../Home.css'
 const Home = () => {
     return (
         <>
             <main>
                 <div className="background-wrapper">
-                    <Navbar />
+                    
                     {/* Hero Section */}
                     <section className="hero">
                         <div>
@@ -75,7 +73,7 @@ const Home = () => {
                     </div>
                 </section>
             </main >
-            <Footer />
+          
 
         </>
 

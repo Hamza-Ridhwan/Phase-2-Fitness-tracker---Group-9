@@ -1,7 +1,15 @@
-export default function Footer(){
-    return (
-        <footer>
-           
-        </footer>
-    )
-}
+import React from 'react';
+
+const Footer = () => {
+  return (
+    <footer>
+      <p>Fitness Tracker &copy; 2024</p>
+
+      <a href="https://policies.google.com/privacy?hl=en"target="_blank">Privacy Policy</a>
+      <a href="https://policies.google.com/terms?hl=en-US"target="_blank">Terms of Service</a>
+      <a href="https://www.instagram.com/"target="_blank">Social Media</a>
+    </footer>
+  );
+};
+
+export default Footer;
