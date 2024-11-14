@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <header>
       <img  src={logo} alt="Fitness Tracker Logo" />
-      <nav>
+      <nav className="nav-container">
         <a href="#">Home</a>
         <a href="#">Track Your Workout</a>
       </nav>
