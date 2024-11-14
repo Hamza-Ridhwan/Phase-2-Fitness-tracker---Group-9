@@ -1,10 +1,11 @@
 import React from 'react';
+import logo from '../image.png'
 
 
 const Navbar = () => {
   return (
     <header>
-      <img   alt="Fitness Tracker Logo" />
+      <img  src={logo} alt="Fitness Tracker Logo" />
       <nav>
         <a href="#">Home</a>
         <a href="#">Track Your Workout</a>
