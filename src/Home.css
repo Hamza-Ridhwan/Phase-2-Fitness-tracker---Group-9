@@ -24,7 +24,7 @@
   /* Header */
   header {
     display: flex;
-    justify-content: space-between; /* Align logo and nav items */
+    justify-content: space-between; /* Align logo and nav container */
     align-items: center; /* Center vertically */
     color: white;
     padding: 1rem 10%;
@@ -35,11 +35,18 @@
     height: 50px; /* Adjust logo size */
   }
   
+  .nav-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Center nav links within container */
+  }
+  
   nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
   }
+  
   
   /* Hero Section */
   .hero {
@@ -154,7 +161,7 @@
   
   /* Footer */
   footer {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     padding: 1rem;
     text-align: center;
