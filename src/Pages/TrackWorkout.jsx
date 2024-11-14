@@ -21,7 +21,6 @@ function TrackWorkout() {
     fetchWorkouts();
   }, []);
 
-  // Fetch workouts with .then() syntax
   function fetchWorkouts() {
     fetch(`${BASE_URL}/workouts`)
       .then(response => {
@@ -54,7 +53,7 @@ function TrackWorkout() {
     const newWorkout = {
       ...formData,
       duration: parseInt(formData.duration, 10),
-      id: isEditing ? editId : workouts.length ? (Math.max(...workouts.map(w => parseInt(w.id))) + 1).toString() : '1', // Ensure ID is a string
+      id: isEditing ? editId : workouts.length ? (Math.max(...workouts.map(w => parseInt(w.id))) + 1).toString() : '1', 
     };
 
     const url = isEditing ? `${BASE_URL}/workouts/${editId}` : `${BASE_URL}/workouts`;

@@ -1,13 +1,12 @@
 import React from 'react';
-import  '../Home.css'
+import '../Home.css';
 import { Link } from 'react-router-dom';
+
 const Home = () => {
     return (
         <>
             <main>
                 <div className="background-wrapper">
-                    
-                    
                     <section className="hero">
                         <div>
                             <h1>Track Your <span className="highlight">Fitness Journey</span></h1>
@@ -16,9 +15,6 @@ const Home = () => {
                     </section>
                 </div>
 
-
-
-            
                 <section className="intro">
                     <h2>Welcome to Your Fitness Tracker</h2>
                     <p>
@@ -28,6 +24,7 @@ const Home = () => {
                     </p>
                 </section>
 
+                <h2 className='section-heading'>What the Tracker Does for You</h2>
                 <section className="why-tracking">
                     <div className="box">
                         <i className="fa fa-bullseye"></i>
@@ -55,6 +52,7 @@ const Home = () => {
                     </div>
                 </section>
 
+                <h2 className='section-heading'>Some of the Exercises Tracked</h2>
                 <section className="exercise-cards">
                     <div className="card">
                         <h3>Running</h3>
@@ -69,11 +67,8 @@ const Home = () => {
                         <p>Improves flexibility and reduces stress. Excellent for mind-body balance.</p>
                     </div>
                 </section>
-            </main >
-          
-
+            </main>
         </>
-
     );
 };
 

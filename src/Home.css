@@ -11,7 +11,7 @@ body {
 }
 
 .background-wrapper {
-  background-image: url('./background\ image.webp');
+  background-image: url('./background image.webp');
   background-size: cover;
   background-position: center;
   color: white;
@@ -41,7 +41,6 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
 }
-
 
 .hero {
   height: 60vh;
@@ -89,6 +88,13 @@ nav a {
 .intro p {
   font-size: 1.1rem;
   color: #555;
+}
+
+.section-heading {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #000000;
+  margin: 2rem 0;
 }
 
 .why-tracking {
