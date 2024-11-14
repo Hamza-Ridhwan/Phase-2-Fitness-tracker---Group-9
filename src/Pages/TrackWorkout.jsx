@@ -15,7 +15,7 @@ export default function TrackWorkout() {
     const [isEditing, setIsEditing] = useState(false);
     const [editId, setEditId] = useState(null);
 
-    const BASE_URL = 'http://localhost:3000';
+    // const BASE_URL = 'http://localhost:3000';
 
     useEffect(() => {
         fetchWorkouts();
@@ -23,7 +23,7 @@ export default function TrackWorkout() {
 
     // Fetch workouts with .then() syntax
     function fetchWorkouts() {
-        fetch(`${BASE_URL}/workouts`)
+        fetch(`http://localhost:3000/workouts`)
             .then(response => {
                 if (!response.ok) throw new Error('Failed to fetch workouts');
                 return response.json();
@@ -57,7 +57,7 @@ export default function TrackWorkout() {
             id: isEditing ? editId : workouts.length ? Math.max(...workouts.map(w => w.id)) + 1 : 1,
         };
 
-        const url = isEditing ? `${BASE_URL}/workouts/${editId}` : `${BASE_URL}/workouts`;
+        const url = isEditing ? `http://localhost:3000/workouts/${editId}` : `http://localhost:3000/workouts`;
         const method = isEditing ? 'PUT' : 'POST';
 
         fetch(url, {
@@ -120,7 +120,7 @@ export default function TrackWorkout() {
     });
 
     function deleteWorkout(id) {
-        fetch(`${BASE_URL}/workouts/${id}`, {
+        fetch(`http://localhost:3000/workouts/${id}`, {
             method: 'DELETE',
         })
             .then(response => {
