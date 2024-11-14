@@ -15,13 +15,11 @@ export default function TrackWorkout() {
     const [isEditing, setIsEditing] = useState(false);
     const [editId, setEditId] = useState(null);
 
-    // const BASE_URL = 'http://localhost:3000';
 
     useEffect(() => {
         fetchWorkouts();
     }, []);
 
-    // Fetch workouts with .then() syntax
     function fetchWorkouts() {
         fetch(`http://localhost:3000/workouts`)
             .then(response => {
