@@ -15,14 +15,13 @@ function TrackWorkout() {
   const [isEditing, setIsEditing] = useState(false);
   const [editId, setEditId] = useState(null);
 
-  const BASE_URL = 'http://localhost:3000';
 
   useEffect(() => {
     fetchWorkouts();
   }, []);
 
   function fetchWorkouts() {
-    fetch(`${BASE_URL}/workouts`)
+    fetch(`https://phase-2-fitness-tracker-group-9.onrender.com/workouts`)
       .then(response => {
         if (!response.ok) throw new Error('Failed to fetch workouts');
         return response.json();
@@ -56,7 +55,7 @@ function TrackWorkout() {
       id: isEditing ? editId : workouts.length ? (Math.max(...workouts.map(w => parseInt(w.id))) + 1).toString() : '1', 
     };
 
-    const url = isEditing ? `${BASE_URL}/workouts/${editId}` : `${BASE_URL}/workouts`;
+    const url = isEditing ? `https://phase-2-fitness-tracker-group-9.onrender.com/workouts/${editId}` : `https://phase-2-fitness-tracker-group-9.onrender.com/workouts`;
     const method = isEditing ? 'PUT' : 'POST';
 
     fetch(url, {
@@ -119,7 +118,7 @@ function TrackWorkout() {
   });
 
   function deleteWorkout(id) {
-    fetch(`${BASE_URL}/workouts/${id}`, {
+    fetch(`https://phase-2-fitness-tracker-group-9.onrender.com/workouts/${id}`, {
       method: 'DELETE',
     })
       .then(response => {
