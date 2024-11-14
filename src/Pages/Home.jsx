@@ -1,25 +1,24 @@
-// src/components/App.jsx
 import React from 'react';
-// import './App.css'; // Add all the styles here or import from index.css
 import  '../Home.css'
+import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <>
             <main>
                 <div className="background-wrapper">
                     
-                    {/* Hero Section */}
+                    
                     <section className="hero">
                         <div>
                             <h1>Track Your <span className="highlight">Fitness Journey</span></h1>
-                            <button className="cta-btn">Start Tracking</button>
+                            <Link to="/trackWorkout" className="cta-btn">Start Tracking</Link>
                         </div>
                     </section>
                 </div>
 
 
 
-                {/* Introduction */}
+            
                 <section className="intro">
                     <h2>Welcome to Your Fitness Tracker</h2>
                     <p>
@@ -29,7 +28,6 @@ const Home = () => {
                     </p>
                 </section>
 
-                {/* Why Tracking Your Fitness is Important */}
                 <section className="why-tracking">
                     <div className="box">
                         <i className="fa fa-bullseye"></i>
@@ -57,7 +55,6 @@ const Home = () => {
                     </div>
                 </section>
 
-                {/* Exercise Cards */}
                 <section className="exercise-cards">
                     <div className="card">
                         <h3>Running</h3>

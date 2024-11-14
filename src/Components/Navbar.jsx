@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../image.png'
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -7,8 +8,8 @@ const Navbar = () => {
     <header>
       <img  src={logo} alt="Fitness Tracker Logo" />
       <nav className="nav-container">
-        <a href="#">Home</a>
-        <a href="#">Track Your Workout</a>
+        <Link to="/">Home</Link>
+        <Link to="/trackWorkout">Track Your Workout</Link>
       </nav>
     </header>
   );
