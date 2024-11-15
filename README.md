@@ -11,7 +11,7 @@ Fitness Tracker is a web application designed to help users monitor their workou
 - Boost motivation by celebrating achievements.  
 - Track various exercises such as running, push-ups, and yoga.
 
-  Setup/Installation Instruction
+## Setup/Installation Instruction
 - Download the project as a ZIP file from the "Code" button and save it to your desired folder.
 - Extract the downloaded ZIP file.
 - Open the extracted folder in VSCode.
