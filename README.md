@@ -31,11 +31,13 @@ The application works perfectly well, no bugs.
 https://fitnesst-app.netlify.app/
 
 ## Slide Deck
------
+https://docs.google.com/presentation/d/126dfNCESI5IhU7iXHaJy9WSjCj310skPkBfJcRB5Obo/edit#slide=id.p
 
 ## Support and contact details
 email : 
 - Hamzathehamzah@gmail.com
+- vintageclias@gmail.com
+- blessedwesonga@gmail.com
 
 
 ## License
