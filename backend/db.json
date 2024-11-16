@@ -1,6 +1,7 @@
 {
   "workouts": [
     {
+<<<<<<< HEAD:backend/db.json
       "exerciseType": "Cardio",
       "dateTime": "2024-11-12T07:30",
       "duration": 30,
@@ -15,14 +16,38 @@
       "intensity": "High",
       "notes": "Intense weightlifting session",
       "id": "2"
+=======
+      "exerciseType": "Strength",
+      "dateTime": "2029-02-04T03:45",
+      "duration": 2,
+      "intensity": "Medium",
+      "notes": "work a little harder ",
+      "id": "1"
+>>>>>>> vinny:db.json
     },
     {
-      "exerciseType": "Flexibility",
-      "dateTime": "2024-11-10T08:00",
-      "duration": 20,
+      "exerciseType": "Strength",
+      "dateTime": "2024-12-31T02:31",
+      "duration": 78,
       "intensity": "Low",
-      "notes": "Yoga session for relaxation",
-      "id": "3"
+      "notes": "work with light weight",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "exerciseType": "Flexibility",
+      "dateTime": "2024-02-04T02:31",
+      "duration": 15,
+      "intensity": "Low",
+      "notes": "ertyui"
+    },
+    {
+      "exerciseType": "Cardio",
+      "dateTime": "4044-12-31T02:11",
+      "duration": 34,
+      "intensity": "Low",
+      "notes": "workout",
+      "id": "4"
     }
   ]
 }

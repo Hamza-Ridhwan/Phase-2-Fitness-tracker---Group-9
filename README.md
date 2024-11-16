@@ -8,6 +8,7 @@ Fitness Tracker is a web application designed to help users monitor their workou
 
 - Set and track fitness goals.  
 - Monitor progress visually.  
+<<<<<<< HEAD
 - Boost motivation by celebrating achievements.  
 - Track various exercises such as running, push-ups, and yoga.
 
@@ -20,6 +21,10 @@ Fitness Tracker is a web application designed to help users monitor their workou
 
 ## Known Bugs
 The application works perfectly well, no bugs.
+=======
+- Boost motivation.  
+- Track various exercises such as running, push-ups, and yoga.  
+>>>>>>> vinny
 
 ## Technologies Used  
 
