@@ -100,6 +100,7 @@ function TrackWorkout() {
     });
     setIsEditing(true);
     setEditId(workout.id);
+    
   }
 
   function handleFilterChange(e) {
